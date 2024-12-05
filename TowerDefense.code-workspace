@@ -1,0 +1,865 @@
+{
+	"folders": [
+		{
+			"name": "TowerDefense",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "TowerDefense Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"Debug",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"Debug",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefense Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"Debug",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"DebugGame",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"DebugGame",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefense Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"DebugGame",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"Development",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"Development",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefense Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"Development",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"Test",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"Test",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefense Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"Test",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"Shipping",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"Shipping",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefense Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"Linux",
+					"Shipping",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"Debug",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"Debug",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefense LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"Debug",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefense LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"Development",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"Development",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefense LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"Development",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"Test",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"Test",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefense LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"Test",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"Shipping",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"Shipping",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefense LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefense LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefense",
+					"LinuxArm64",
+					"Shipping",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefenseEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefenseEditor",
+					"Linux",
+					"Debug",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefenseEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefenseEditor",
+					"Linux",
+					"Debug",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefenseEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefenseEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefenseEditor",
+					"Linux",
+					"Debug",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefenseEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefenseEditor",
+					"Linux",
+					"DebugGame",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefenseEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefenseEditor",
+					"Linux",
+					"DebugGame",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefenseEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefenseEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefenseEditor",
+					"Linux",
+					"DebugGame",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefenseEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefenseEditor",
+					"Linux",
+					"Development",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefenseEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefenseEditor",
+					"Linux",
+					"Development",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"TowerDefenseEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "TowerDefenseEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"TowerDefenseEditor",
+					"Linux",
+					"Development",
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch TowerDefense (Debug)",
+				"request": "launch",
+				"program": "/home/alex/Repos/TowerDefenseUE/TowerDefense/Binaries/Linux/UnrealGame-Linux-Debug",
+				"preLaunchTask": "TowerDefense Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TowerDefense (DebugGame)",
+				"request": "launch",
+				"program": "/home/alex/Repos/TowerDefenseUE/TowerDefense/Binaries/Linux/UnrealGame-Linux-DebugGame",
+				"preLaunchTask": "TowerDefense Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TowerDefense (Development)",
+				"request": "launch",
+				"program": "/home/alex/Repos/TowerDefenseUE/TowerDefense/Binaries/Linux/UnrealGame",
+				"preLaunchTask": "TowerDefense Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TowerDefense (Test)",
+				"request": "launch",
+				"program": "/home/alex/Repos/TowerDefenseUE/TowerDefense/Binaries/Linux/UnrealGame-Linux-Test",
+				"preLaunchTask": "TowerDefense Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TowerDefense (Shipping)",
+				"request": "launch",
+				"program": "/home/alex/Repos/TowerDefenseUE/TowerDefense/Binaries/Linux/UnrealGame-Linux-Shipping",
+				"preLaunchTask": "TowerDefense Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TowerDefenseEditor (Debug)",
+				"request": "launch",
+				"program": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "TowerDefenseEditor Linux Debug Build",
+				"args": [
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject"
+				],
+				"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TowerDefenseEditor (DebugGame)",
+				"request": "launch",
+				"program": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "TowerDefenseEditor Linux DebugGame Build",
+				"args": [
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject"
+				],
+				"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch TowerDefenseEditor (Development)",
+				"request": "launch",
+				"program": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "TowerDefenseEditor Linux Development Build",
+				"args": [
+					"/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject"
+				],
+				"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/home/alex/Repos/TowerDefenseUE/TowerDefense/TowerDefense.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/alex/Downloads/UE/Linux_Unreal_Engine_5.4.4"
+			}
+		]
+	}
+}
