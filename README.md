@@ -17,3 +17,14 @@ As of **December 5, 2024**, I am currently unable to build the game. Due to issu
     - Creating UI elements
     - Handling UI events and interactions
     - Simple design of UI widgets
+
+</br>
+
+---
+### Credits:
+
+- Kenney (https://kenney-assets.itch.io/tower-defense-kit)
+
+- Good B. Music (https://pixabay.com/music/beautiful-plays-anthem-of-victory-111206/)
+
+- https://pixabay.com/music/main-title-battle-of-the-dragons-8037/
